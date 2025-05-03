@@ -5,7 +5,7 @@
 #
 # Description: 
 # Updates the exif metadata of each photo to reflect the correct timezone
-# while keeping the date and time of the origianl photo
+# while keeping the date and time of the original photo
 #
 # Author: Kyle Dunkerley
 # Date: 02/05/2025
@@ -61,7 +61,6 @@ if (-not (Test-Path $folderPath)) {
     Write-Host "`e[31mERROR: Folder path does not exist: $folderPath`e[0m"
     exit
 }
-
 
 # Get all JPG files in the folder
 $jpgFiles = Get-ChildItem -Path $folderPath -Filter "*.jpg" -File
