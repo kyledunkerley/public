@@ -14,6 +14,6 @@ Here, you'll find a collection of **PowerShell, ARM, and Bicep scripts** designe
 - **Tinkerer** – I love **experimenting** with code and pushing the boundaries of automation.
 
 ## 🚀 Getting Started
-Each script will have a detailed writeup on [KyleDunkerley DotPro](https://www.KyleDunkerley.pro), so be sure to check there for explinations, funny stories on why I have these scripts and more. 
+Each script will have a detailed writeup on [KyleDunkerley DotPro](https://www.KyleDunkerley.pro), so be sure to check there for explanations, funny stories on why I have these scripts and more.
 
 Feel free to fork, contribute, or suggest enhancements — I love collaborating on projects!
