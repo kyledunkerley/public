@@ -58,7 +58,7 @@ Start-Process -NoNewWindow -Wait -FilePath "exiftool" -ArgumentList "-ver"
 
 # Check if folder exists
 if (-not (Test-Path $folderPath)) {
-    Write-Host "`e[31mERROR: Folder path does not exist: $folderPath`e[0m"
+    Write-Host "`ERROR: Folder path does not exist: $folderPath`" -ForegroundColor Red
     exit
 }
 
