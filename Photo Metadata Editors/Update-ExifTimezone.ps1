@@ -15,12 +15,12 @@
 # -------  Change these values for your use case -------  #
 
 # Define the folder containing your photos
-$folderPath = "Path_to_folder"
+$folderPath = "C:\Users\Kyle\OneDrive\Pictures\01. Import\Jeremy's Photos\Vietnam\VNTZ"
 
 # The timezone to update to
 # EG: Australia is +10:00 for AEDT and +11:00 for AEST
-# For this one, I have used Veitnam ($timezone)
-$timeZone = "$timezone"
+# For this one, I have used Veitnam (+07:00)
+$timeZone = "+07:00"
 
 
 # -------  The script -------  #
@@ -97,7 +97,7 @@ foreach ($file in $jpgFiles) {
         Write-Host "Original timestamp: $dateTaken | Original timezone: $originalTimezone"
 
         # Update timezone offset
-        & $exifToolPath "-OffsetTimeOriginal=$timezone" "-OffsetTimeDigitized=$timezone" "$($file.FullName)"
+        & $exifToolPath "-OffsetTime=$timezone" "-OffsetTimeOriginal=$timezone" "-OffsetTimeDigitized=$timezone" "$($file.FullName)"
         Write-Host "Updated timezone offset to $timezone for $($file.FullName)" -ForegroundColor Green
 
         # Sync metadata properly
